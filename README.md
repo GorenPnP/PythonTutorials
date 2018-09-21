@@ -1,14 +1,20 @@
 # PythonTutorials
+## Download contents of this repo as zip
+If you do not want to setup git, you can download contents as zip. But you would have to download a slightly changed package again and again on each change.
+
 ## Setup git on Windows
 Download git for windows [here](https://git-scm.com/download/win) and click through the installing wizard.
-You may leave all settings at their default, except you want to have an Icon on your Deaktop or do not need a fancy gui.
+You may leave all settings at their default, except you want to have an Icon on your Desktop or do not need a fancy gui\:
 
+![screenshot_general_settings](doc/images/1_general_settings.PNG)
 
-You can also change the default editor git uses, if you are not familiar with vi.
+You can also change the default editor git uses, if you are not familiar with vi\:
 
+![screenshot_default_editor](doc/images/2_default_editor.PNG)
 
-One last thing you **should** change is one setting concerning newlines, since they are different in Windows and Linux systems:
+One last thing you **should** change is one setting concerning newlines, since they are different in Windows and Linux systems\:
 
+![screenshot_newline_settings](doc/images/3_newline_config.PNG)
 
 When the installation is completed, start git-cmd and move in a directory where you want to clone the files of thos repository into. (to **c**hange **d**irectories, use `cd <dirname>`. To change into the parent directory, use `cd ..`. Go back to your home dir with just `cd`). Then type/paste `git clone https://github.com/GorenPnP/PythonTutorials.git` and you should have a new directory containing everything in this repo.
 
