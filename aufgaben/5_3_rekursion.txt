@@ -1,0 +1,32 @@
+Aufgabe 5.3: Rekursive Berechnungen:
+
+Implementieren Sie folgende, rekursive Methoden:
+
+a) def ackermann(n, m)
+    Berechnet rekursiv die Ackermann Funktion. Diese mathematische Funktion mit zwei natürlichen Zahlen, also zwei ints, als Parametern ist eine extrem schnell wachsende Funktion, die in der theoretischen Informatik und Mathematik von Bedeutung ist. Sie ist definiert wie folgt:
+    a(0, m) = m + 1
+    a(n, 0) = a(n − 1, 1)
+    a(n, m) = a(n − 1, a(n, m − 1))
+
+    Der Rückgabewert ist also ein int als Ergebnis der Berechnung.
+
+Testen Sie Ihre Funktion zuerst mit sehr kleinen Werten!
+
+b) def istPalindrom(wort)
+    Berechnet rekursiv, ob wort ein Palindrom ist, also ob das Wort rückwärts gelesen dem origi-
+    nalen Wort entspricht (wie anna oder lagerregal). In Ihrer Implementation sollen sie Groß- und
+    Kleinbuchstaben als unterschiedlich ansehen – Anna wäre also kein Palindrom.
+
+    Rückgabewert ist entsprechend ein bool.
+
+c) def potenz(basis, exponent)
+    Berechnet rekursiv basis^exponent.
+
+Schreiben Sie in der main-Methode ein Programm, das dem Benutzer ermöglicht, alle implemen-
+tierten Methoden zu testen. Dazu soll zunächst eingelesen werden, welche Methode benutzt werden
+soll. Dann sollen die dazu nötigen Parameter eingelesen und der Rückgabewert der Methode ausgege-
+ben werden. Achten Sie auf geeignete Fehlerbehandlung und eine sinnvolle Benutzerführung. Wenn
+eine Methode mit ungeeigneten Werten aufgerufen wird, soll ein Error geworfen
+werden. Zusätzlich sollen die Parameter sicher eingelesen werden, sodass der Benutzer nie direkt
+Errors sieht. (Ähm. try/except Hust)
+
