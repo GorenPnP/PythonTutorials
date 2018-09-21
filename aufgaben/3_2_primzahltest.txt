@@ -1,6 +1,6 @@
 Aufgabe 3.2: Primzahltest:
 
-Implementieren Sie eine Klasse Primzahltest.java, welche eine positive, ganze Zahl n einliest
+Implementieren Sie eine Klasse 3_2_primzahltest.py, welche eine positive, ganze Zahl n einliest
 und auf naive Art testet, ob diese eine Primzahl ist. Prüfen Sie dazu, ob n durch eine der Zahlen
 zwischen 2 und n − 1 teilbar ist.
 Überlegen Sie, wie sie die Laufzeit ihres Programms optimieren können und setzen Sie die entspre-

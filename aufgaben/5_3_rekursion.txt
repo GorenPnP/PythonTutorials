@@ -1,9 +1,9 @@
 Aufgabe 5.3: Rekursive Berechnungen:
 
-Implementieren Sie in einer Klasse folgende, rekursive Methoden:
+Implementieren Sie folgende, rekursive Methoden:
 
 a) def ackermann(n, m)
-    Berechnet rekursiv die Ackermann Funktion. Diese mathematische Funktion mit zwei natürlichen Zahlen, also zwei ints, als Parametern ist eine extrem schnell wachsende Funktion, die in der theoretischenInformatik und Mathematik von Bedeutung ist. Sie ist definiert wie folgt:
+    Berechnet rekursiv die Ackermann Funktion. Diese mathematische Funktion mit zwei natürlichen Zahlen, also zwei ints, als Parametern ist eine extrem schnell wachsende Funktion, die in der theoretischen Informatik und Mathematik von Bedeutung ist. Sie ist definiert wie folgt:
     a(0, m) = m + 1
     a(n, 0) = a(n − 1, 1)
     a(n, m) = a(n − 1, a(n, m − 1))
