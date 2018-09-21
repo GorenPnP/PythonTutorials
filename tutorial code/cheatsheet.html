@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        ul li ul {list-style-type: none}
+        .var {color: aqua}
+        .keyword {color: darkorange}
+    </style>
+
+    <title>Cheatsheet for Python</title>
+</head>
+<body>
+    <h1>Cheatsheet for Python</h1>
+    <p style="color: red;">Note: still growing and will never be remotely complete :O</p>
+    <h2>Data types and operations</h2>
+
+    <h3>Numbers</h3>
+
+    <p>integer (<span class="keyword">int</span>) and <span class="keyword">float</span>, while ints do not have decimal places but floats do.</p>
+    <p>Operations:<br />
+        Let x, y be an <span class="keyword">int</span> or <span class="keyword">float</span>.
+        <ul>
+            <li>x + x</li>
+            <li>x - x</li>
+            <li>x * x</li>
+            <li>x % y  (modulus, returns the remainder of x / y)</li>
+            <li>x / x  (returns a <span class="keyword">float</span>)</li>
+            <li>x // x (returns an <span class="keyword">int</span> with decimal places cut off)</li>
+            <li>x ** y (returns x to the power of y)</li><br />
+            <li>x < y (less than)</li>
+            <li>x <= y (less than or equal to)</li>
+            <li>x > y (greater than)</li>
+            <li>x >= y (greater than or equal to)</li>
+            <li>x == y (<span class="keyword">True</span> if the values are equal)</li>
+            <li>x != y (<span class="keyword">True</span> if the values are unequal, opposite to == )</li>
+            <li>x (evaluated to <span class="keyword">True if</span> x <span class="keyword">is not None</span>
+                and x != 0) -> <span class="keyword">if while for</span></li>
+            <li>x <span class="keyword">is</span> y (true if the object in memory both x and y reference is the same)</li><br />
+            <li>parentheses (), to mark or change the operator order</li>
+            <li>bitwise operations (~, |, &, <<, >>)</li>
+        </ul>
+
+    <h3>Boolean</h3>
+
+    <p>A boolean (<span class="keyword">bool</span>) can only have one of the two values: <span class="keyword">True</span> or <span class="keyword">False</span>.</p>
+    <p>logical operations:<br />
+        Let b, i be bool variables.
+        <ul>
+            <li>b == i (<span class="keyword">True</span> if both are either <span class="keyword">True</span> or <span class="keyword">False</span>)</li>
+            <li>b != i (<span class="keyword">True</span> if the values are not the same)</li><br />
+            <li>b <span class="keyword">is</span> i</li>
+            <li>b (<span class="keyword">True</span> if b is <span class="keyword">True</span>) -> <span class="keyword">if</span> b: ..  is possible with that instead of  <span class="keyword">if</span> b == <span class="keyword">True</span>: ..</li>
+            <li><span class="keyword">not</span> b (<span class="keyword">True</span> if b is <span class="keyword">False</span>)
+                <ul><li>&ensp;| t f</li>
+                    <li>-+-----</li>
+                    <li>&ensp;| f t</li>
+                </ul>
+            </li>
+            <li>b <span class="keyword">and</span> i
+                <ul><li>&nbsp;&ensp;| t f</li>
+                    <li>--+-----</li>
+                    <li>&ensp;t| t f</li>
+                    <li>&ensp;f| f f</li>
+                </ul>
+            </li>
+            <li>b <span class="keyword">or</span> i
+                <ul><li>&nbsp;&ensp;| t f</li>
+                    <li>--+-----</li>
+                    <li>&ensp;t| t t</li>
+                    <li>&ensp;f| t f</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    <p>You can also have combinations of <span class="keyword">not and or</span>. E.g.: <span class="keyword">not</span> b <span class="keyword">and</span> i -> ((<span class="keyword">not</span> b) <span class="keyword">and</span> i)</p>
+
+    <h3>None</h3>
+
+    <p><span class="keyword">None</span> is a type to signal that there is nothing, not even a zero (which would be an <span class="keyword">int</span> or <span class="keyword">float</span>, so a fixed value).</p>
+    <p>Operations:<br />
+        Let x be any variable.
+        <ul>
+            <li>x == <span class="keyword">None</span></li>
+            <li>x != <span class="keyword">None</span></li>
+            <li>x <span class="keyword">is None</span></li>
+        </ul>
+    </p>
+
+    <h3>String</h3>
+
+    <p>A string (<span class="keyword">str</span>) is a series of characters (utf-8 encoded per default in python3). Starts and ends with a " or ', for multiple lines also with """</p>
+    <p>Operations:<br />
+        Let x be an int.
+        <ul>
+            <li>"Hello" + " world" (returns the concatinated string "Hello world")</li>
+            <li>"a" * x (returns x-times the content of the string to a new one)</li><br />
+            <li>A nonempty string will always be evaluated to <span class="keyword">True</span>: <span class="keyword">if</span> "str": .. is the same as <span class="keyword">if</span> "str" != "": ..</li><br />
+            <li>MANY more functions, like replace parts, count occurences, for more click
+                <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">here</a><br />
+                Often used ones include: format, replace, split, join
+            </li>
+        </ul>
+    </p>
+
+    <h3>List</h3>
+
+    <h3>Tuple</h3>
+
+    <h3>Dictonary</h3>
+
+    <h3>Set</h3>
+
+<h2>Control structures</h2>
+
+    <h3>"Branching"</h3>
+
+        <h4>If</h4>
+
+        <h4>If-Elif-Else</h4>
+
+    <h3>Loops</h3>
+    continue, break
+
+        <h4>while</h4>
+
+        <h4>For</h4>
+
+            <h5>Indexing</h5>
+
+            <h5>list comprehensions</h5>
+
+
+<h2>Functions</h2>
+
+<h3>Built-in ones</h3>
+    <p>all of them can be found <a href="https://docs.python.org/3/library/functions.html">here</a>,<br />
+        but the most important in general  are the typeconversions/constructors/casts and <span class="keyword">len print range</span>.<br />
+        Later in OOP <span class="keyword">super</span> plays a mayor role as it can make the superclass' enteties acessible.</p>
+
+<h3>own declarations</h3>
+    various possibilities to pass parameters<br/>
+    <span class="keyword">return</span>
+<h3>call a function</h3>
+    open up returned tuple/list
+
+
+</body>
+</html>
