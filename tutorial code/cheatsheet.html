@@ -7,6 +7,7 @@
         ul li ul {list-style-type: none}
         .var {color: aqua}
         .keyword {color: darkorange}
+        .todo {color: grey !important}
     </style>
 
     <title>Cheatsheet for Python</title>
@@ -104,32 +105,59 @@
         </ul>
     </p>
 
-    <h3>List</h3>
+    <h3 class="todo">List</h3>
 
-    <h3>Tuple</h3>
+    <h3 class="todo">Tuple</h3>
 
-    <h3>Dictonary</h3>
+    <h3 class="todo">Dictonary</h3>
 
-    <h3>Set</h3>
+    <h3 class="todo">Set</h3>
 
 <h2>Control structures</h2>
 
     <h3>"Branching"</h3>
 
-        <h4>If</h4>
+        <h4 class="todo">If</h4>
 
-        <h4>If-Elif-Else</h4>
+        <h4 class="todo">If-Elif-Else</h4>
 
     <h3>Loops</h3>
-    continue, break
+        <span class=todo keyword">continue</span>, <span class="todo keyword">break</span>
 
-        <h4>while</h4>
+        <h4 class="todo">while</h4>
 
         <h4>For</h4>
 
-            <h5>Indexing</h5>
+            <h5 class="todo">Indexing</h5>
+            <p class="todo">all the nice possibilities to use [::]</p>
 
             <h5>list comprehensions</h5>
+                <p>Imagine you have got code like the following:</p>
+                <code>
+                      baseList = ["hello", 42, False, None, "you"]<br />
+                      itemList = []<br />
+                      <span class="keyword">for</span> e <span class="keyword">in</span> itemList:<br />
+                       &nbsp;&nbsp;itemList.append(e)<br/ >
+                </code>
+                <p>The following does exactly the same:</p>
+                <code>
+                    baseList = ["hello", 42, False, None, "you"]<br />
+                    itemList = [e <span class="keyword">for</span> e <span class="keyword">in</span> baseList]
+                </code>
+                <p>You may even use if-statements in that sweet little thing. Instead of writing:</p>
+                <code>
+                      baseList = ["hello", 42, False, None, "you"]<br />
+                      itemList = []<br />
+                      <span class="keyword">for</span> e <span class="keyword">in</span> itemList:<br />
+                      &nbsp;&nbsp;<span class="keyword">if</span> type(e) == str:<br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;itemList.append(e)<br/ >
+                </code>
+                <p>we can abbreviate to:</p>
+                <code>
+                      baseList = ["hello", 42, False, None, "you"]<br />
+                      itemList = [e <span class="keyword">for</span> e <span class="keyword">in</span> baseList <span class="keyword">if</span> type(e) == str]
+                </code>
+                <p>How cool & neat is that!?</p>
 
 
 <h2>Functions</h2>
@@ -137,13 +165,34 @@
 <h3>Built-in ones</h3>
     <p>all of them can be found <a href="https://docs.python.org/3/library/functions.html">here</a>,<br />
         but the most important in general  are the typeconversions/constructors/casts and <span class="keyword">len print range</span>.<br />
-        Later in OOP <span class="keyword">super</span> plays a mayor role as it can make the superclass' enteties acessible.</p>
+        Later in OOP <span class="keyword">super</span> plays a mayor role as it can make the superclass' enteties acessible, but more on the field of object oriented programming later.</p>
 
-<h3>own declarations</h3>
-    various possibilities to pass parameters<br/>
-    <span class="keyword">return</span>
-<h3>call a function</h3>
-    open up returned tuple/list
+<h3 class="todo">own declarations</h3>
+    <p class="todo">various possibilities to pass parameters<br/>
+    <span class="keyword">return</span></p>
+<h3 class="todo">call a function</h3>
+    <p class="todo">open up returned tuple/list</p>
+
+<h2>All key words</h2>
+    <ul>
+        <li>False, True
+        <li>None
+        <li>if, elif, else
+        <li>for, while
+        <li>and, or, not, is
+        <li>in
+        <li>pass
+        <li>import, from
+        <li>raise, try, except, finally
+        <li>as
+        <li>break, continue
+        <li>class, def, return, yield
+        <li>del
+        <li>with
+        <li>lambda
+        <li>global, nonlocal
+        <li>assert
+    </ul> 
 
 
 </body>
