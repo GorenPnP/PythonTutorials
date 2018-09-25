@@ -1,0 +1,24 @@
+Schreibe zu jedem der folgenden Probleme eine Funktion, die ..
+a) eine for-schleife
+b) eine while-schleife
+c) rekursion (mit Basisfall/-faellen und Problemverkleinerung)
+.. verwendet. Achte auch auf die Fehlerbehandlung, etwa wenn ein Parameter nicht im Definitionsbereich liegt.
+
+1) Produkt oder Fakultaet.
+    Berechne die Fakultaet der natuerlichen Zahlen von 0 bis n.
+    Oder:f(0) = 1
+         Für alle x aus IN mit x != 0:
+         f(x) = f(x-1) * x
+
+2) Summe.
+    Berechne die Summme der natuerlichen Zahlen von 0 bis n.
+    Oder:f(0) = 0
+         Für alle x aus IN mit x != 0:
+         f(x) = f(x-1) + x
+
+3) Potenz:
+    Berechne die Potenz einer Basis b und eines Exponenten e. Dabei sei e aus IN.
+    Oder:Sei f:IRxIN -> IR, f(b, e) |-> b^e eine Funktion, die die e-te Potenz von b berechnet. Dann ist die aequivalente rekursive Darstellung:
+        f(b, 0) = 1
+        Für alle e != 0:
+        f(b, e) = f(b, e-1) * b
